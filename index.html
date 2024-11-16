@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <div class="logo-png">
+            <img src="/tdt-d.png" alt="logo">
+            <h1>tat d</h1>
+        </div>
+      <p>trusted & trained driver</p>
+    </div>
+    <button class="back-btn">Back</button>
+  </header>
+
+  <main>
+    <section class="premium-driver">
+      <div class="driver-info">
+        <h2>Premium Driver <span class="new-badge">New</span></h2>
+        <p>For luxurious and reliable experience</p>
+      </div>
+      <button class="button-new">T</button>
+    </section>
+
+    <div class="info-box">
+      <p>
+        <span>✔ Free cancellation up to 1 hour before schedule time otherwise cancellation of 100 Rs will applies to block driver schedule</span><br>
+        <span class="highlight">Overtime rates are now Rs 2 per minute, and night charges are Rs 200.</span>
+      </p>
+    </div>
+
+    <section class="payment-options">
+      <h3>Payment options</h3>
+      <div class="option">
+        <input type="radio" id="pay-cash" name="payment" checked>
+        <label for="pay-cash">Pay Cash</label>
+        <p>Pay at the end of trip</p>
+        <span>₹ 2300</span>
+      </div>
+      <div class="option">
+        <input type="radio" id="pay-online" name="payment">
+        <label for="pay-online">Pay Online</label>
+        <p>Make full payment now</p>
+        <span>₹ 2300</span>
+      </div>
+    </section>
+    <div class="button">
+        <button class="book-now">BOOK NOW ₹ 2300</button>
+    </div>
+  </main>
+
+  <script>
+    const doneButton = document.querySelector('.button-new');
+  
+    doneButton.addEventListener('click', () => {
+      // Redirect to the new page
+      window.location.href = 'newPage.html'; // Replace 'new_page.html' with the actual file name
+    });
+  </script>
+</body>
+</html>
